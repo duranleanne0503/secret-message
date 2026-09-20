@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>you have a message ♡</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,serif;background:linear-gradient(145deg,#fff9fc,#f5eaf1,#fff);color:#49353f}
+.wrap{width:min(850px,92%);margin:auto;padding:65px 0}.card{background:#ffffffd0;border:1px solid #eadce4;box-shadow:0 20px 60px #5a324b18;border-radius:28px;padding:45px 28px;text-align:center}
+.small{letter-spacing:4px;text-transform:uppercase;font-size:10px;color:#a2738d}h1{font-size:clamp(40px,10vw,72px);font-weight:normal;color:#70475d;margin:15px 0 7px}.sub{font-style:italic;color:#987487}
+button{margin-top:28px;border:0;border-radius:999px;padding:13px 23px;background:#70475d;color:white;cursor:pointer}
+section{display:none;margin-top:38px;animation:show .6s ease}section.show{display:block}@keyframes show{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.letter{max-width:650px;margin:auto;text-align:left;line-height:1.9}.hintbox{margin:18px 0;padding:20px;border-radius:18px;background:#fff7fb;border:1px solid #f0e1e9}.hint{font-size:17px;color:#70475d;margin:0}
+.reveal{font-size:clamp(25px,6vw,43px);color:#70475d;margin:25px 0 8px}.tiny{font-size:12px;color:#a27b8f;margin-top:25px}
+</style></head>
+<body><div class="wrap"><div class="card">
+<div class="small">to someone who might recognize this</div>
+<h1>you have a message.</h1><div class="sub">from someone who is staying anonymous... for now.</div>
+<button onclick="show('msg')">open it</button>
+
+<section id="msg"><div class="letter">
+<p>hi.</p>
+<p>okay, this is probably a little random. but there's something i've wanted to say, and being anonymous makes it slightly less terrifying.</p>
+<p>i don't know if you've noticed, but you're someone i genuinely look forward to talking to. you're also someone i've quietly cared about for longer than you probably realize.</p>
+<p>i'm not asking you to figure everything out right away. i just wanted to leave you a little something to think about.</p>
+</div><button onclick="show('hints')">need a hint?</button></section>
+
+<section id="hints"><h2>fine. just a few.</h2>
+<div class="hintbox"><p class="hint">hint #1</p><p>you've probably seen me more times than you realize.</p></div>
+<div class="hintbox"><p class="hint">hint #2</p><p>we have a few memories that i still think about sometimes.</p></div>
+<div class="hintbox"><p class="hint">hint #3</p><p>i'm probably closer than you think.</p></div>
+<div class="hintbox"><p class="hint">hint #4</p><p>you might know me as someone who is a little sentimental.</p></div>
+<button onclick="show('final')">okay... last hint</button></section>
+
+<section id="final"><div class="reveal">i think you already know who this is.</div>
+<p>if you don't, that's okay. maybe i'll tell you someday.</p>
+<p>but for now, just know that someone out there thinks you're pretty special.</p>
+<p>and yes... <b>this is a confession.</b></p>
+<div class="tiny">— from someone who hopes you notice the clues ♡</div></section>
+</div></div>
+<script>function show(id){document.getElementById(id).classList.add('show');setTimeout(()=>document.getElementById(id).scrollIntoView({behavior:'smooth',block:'center'}),80)}</script>
+</body></html>
